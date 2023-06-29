@@ -1,0 +1,225 @@
+/* Styling Umum */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+}
+
+.back-button {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  padding: 20px;
+  margin-top: 60px; /* Menambahkan margin atas untuk menghindari konten tertutup oleh navbar */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("/assets/img/gambar.jpg"); /* Mengganti 'gambar.jpg' dengan nama dan lokasi gambar yang diinginkan */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.snowflake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+/* Formulir dan Tabel */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+input[type="submit"],
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-primary:hover {
+  background: rgb(82, 39, 111);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 39, 111, 1) 0%,
+    rgba(134, 19, 19, 1) 50%,
+    rgba(122, 86, 35, 1) 100%
+  );
+}
+.button-secondary {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background: rgb(82, 39, 111);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 39, 111, 1) 0%,
+    rgba(134, 19, 19, 1) 50%,
+    rgba(122, 86, 35, 1) 100%
+  );
+}
+
+#resultTable,
+#exampleTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#resultTable td,
+#exampleTable td {
+  font-family: "Courier New", monospace;
+}
+
+#solutionParagraph {
+  font-family: "Courier New", monospace;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Media Query untuk Tampilan Responsif */
+@media only screen and (max-width: 600px) {
+  form input[type="text"],
+  form select,
+  form input[type="submit"],
+  form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #resetButton,
+  #reverseButton {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(82, 39, 111);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 39, 111, 1) 0%,
+    rgba(134, 19, 19, 1) 50%,
+    rgba(122, 86, 35, 1) 100%
+  );
+}

@@ -1,0 +1,112 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 20px;
+  margin-top: 60px; /* Menambahkan margin atas untuk menghindari konten tertutup oleh navbar */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-image: url("/assets/img/gambar.jpg"); /* Mengganti 'gambar.jpg' dengan nama dan lokasi gambar yang diinginkan */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.snowflake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(82, 39, 111);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 39, 111, 1) 0%,
+    rgba(134, 19, 19, 1) 50%,
+    rgba(122, 86, 35, 1) 100%
+  );
+}
+
+.card {
+  font-family: Arial, sans-serif;
+  background-color: #ccc;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  text-align: center;
+}
